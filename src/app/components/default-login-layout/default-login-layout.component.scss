@@ -4,12 +4,13 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    align-content: center;
+    justify-content: center;
+    height: 100%;
    
 }
     section{
         display: flex;
-        flex-direction: center;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 100%;
