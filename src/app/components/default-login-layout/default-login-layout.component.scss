@@ -1,0 +1,33 @@
+@import "../../../styles/variables.scss";
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+   
+}
+    section{
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .main-section {
+        gap: 8px;
+        
+        flex-grow: 1;
+        background: $gray-bkgd;
+    }
+
+    .form-section {
+        flex-grow: 0.3;
+        
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Poppins;
+        }
+     }
