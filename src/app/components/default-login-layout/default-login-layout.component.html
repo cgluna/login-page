@@ -4,13 +4,19 @@
 
         <h2>{{ title }}</h2>
 
-        <button class="Btn-primary"> {{ primaryBtnText }} </button>
+        <ng-content></ng-content>
+        <div class="btn-wrapper">
+            <button class="Btn-primary"> {{ primaryBtnText }} </button>
         
-        <div>
-            <span> Or </span>
+            <div class="divider">
+                    <div></div>
+                <span> Or </span>
+                    <div></div>
+            </div>
+    
+            <button class="Btn-secondary"> {{ secondaryBtnText }} </button>
         </div>
-
-        <button class="Btn-secondary"> {{ secondaryBtnText }} </button>
+      
     </section>
 
     <section class="main-section"> 

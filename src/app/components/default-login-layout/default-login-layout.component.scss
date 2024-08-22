@@ -5,9 +5,8 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100%;
-   
-}
+    height: 100%; 
+
     section{
         display: flex;
         flex-direction: column;
@@ -18,7 +17,6 @@ main {
 
     .main-section {
         gap: 8px;
-        
         flex-grow: 1;
         background: $gray-bkgd;
     }
@@ -26,13 +24,46 @@ main {
     .form-section {
         flex-grow: 0.3;
         padding: 0 35px;
+        
+        img {
+            margin-bottom: 25px; 
+        }
 
         h2 {
             font-size: 20px;
             font-weight: bold;
+            margin-bottom: 45px;
         }
 
-        button {
+        .btn-wrapper {
+            display: flex;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 30px;
+            
+            .divider {
+                display: flex;
+                font-size: 14px;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                color: $gray-bkgd;
+                font-weight: 400;
+                text-transform: uppercase;
+                width: 100%;
+
+                    div {
+                        flex-grow: 1;
+                        height: 1.1px; 
+                        background-color: $gray-bkgd;
+                    }
+
+            }
+
+            button {
             width: 100%;
             border-radius: 8px;
             border: none;
@@ -40,15 +71,20 @@ main {
             font-weight: 600;
             background: transparent;
             padding: 13px 24px;
-        }
+            cursor: pointer;
+            
 
-        .Btn-primary {
+            &.Btn-primary {
             background-color: $primary-color ;
-            color: #FFFFFF
-        }
+            color: #FFFFFF;
+            box-shadow: 0px 8px 12px rgba(148.23004603385925, 64.33935597538948, 255, 0.20000000298023224);
+            }
 
-        .Btn-secondary {
+            &.Btn-secondary {
             border: 1px solid $primary-color ;
             color: $primary-color
+            }
+            }
         }
     }
+}
